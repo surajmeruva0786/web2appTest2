@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saveur - Fine Dining Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Saveur</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#reservations" class="nav-link">Reservations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">An Extraordinary Culinary Journey</h1>
+            <p class="hero-subtitle">Where artistry meets flavor in perfect harmony</p>
+            <a href="#reservations" class="cta-button">Reserve Your Table</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>At Saveur, we believe dining is an art form. Our award-winning chefs craft each dish with precision, using only the finest seasonal ingredients sourced from local farms and trusted purveyors around the world.</p>
+                    <p>Since our opening, we have been dedicated to creating an unparalleled dining experience that celebrates both tradition and innovation, bringing you flavors that tell a story with every bite.</p>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">Chef's Table</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Dishes -->
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Dishes</h2>
+            <div class="featured-grid">
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <div class="image-placeholder">Signature Dish</div>
+                    </div>
+                    <h3>Pan-Seared Duck Breast</h3>
+                    <p>Cherry gastrique, roasted root vegetables, and herb-infused jus</p>
+                </div>
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <div class="image-placeholder">Seasonal Special</div>
+                    </div>
+                    <h3>Lobster Thermidor</h3>
+                    <p>Classic preparation with cognac, cream, and aged gruyère</p>
+                </div>
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <div class="image-placeholder">Dessert</div>
+                    </div>
+                    <h3>Chocolate Soufflé</h3>
+                    <p>Dark chocolate with vanilla bean crème anglaise</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-categories">
+                <button class="menu-category active" data-category="appetizers">Appetizers</button>
+                <button class="menu-category" data-category="mains">Main Courses</button>
+                <button class="menu-category" data-category="desserts">Desserts</button>
+                <button class="menu-category" data-category="wines">Wine Selection</button>
+            </div>
+            
+            <div class="menu-content">
+                <div class="menu-section active" id="appetizers">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Oysters Rockefeller</h3>
+                            <span class="price">$18</span>
+                        </div>
+                        <p>Fresh Blue Point oysters with spinach, herbs, and pernod</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Foie Gras Terrine</h3>
+                            <span class="price">$32</span>
+                        </div>
+                        <p>House-made terrine with fig compote and brioche toast</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tuna Tartare</h3>
+                            <span class="price">$24</span>
+                        </div>
+                        <p>Yellowfin tuna with avocado, citrus, and sesame tuile</p>
+                    </div>
+                </div>
+
+                <div class="menu-section" id="mains">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Wagyu Beef Tenderloin</h3>
+                            <span class="price">$85</span>
+                        </div>
+                        <p>A5 Japanese wagyu with truffle potato purée and red wine reduction</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Atlantic Halibut</h3>
+                            <span class="price">$42</span>
+                        </div>
+                        <p>Pan-roasted with cauliflower purée and brown butter sauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Rack of Lamb</h3>
+                            <span class="price">$48</span>
+                        </div>
+                        <p>Herb-crusted Colorado lamb with ratatouille and rosemary jus</p>
+                    </div>
+                </div>
+
+                <div class="menu-section" id="desserts">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Crème Brûlée</h3>
+                            <span class="price">$14</span>
+                        </div>
+                        <p>Madagascar vanilla custard with caramelized sugar crust</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tarte Tatin</h3>
+                            <span class="price">$16</span>
+                        </div>
+                        <p>Upside-down apple tart with cinnamon ice cream</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Dark Chocolate Mousse</h3>
+                            <span class="price">$12</span>
+                        </div>
+                        <p>Valrhona chocolate with raspberry coulis and gold leaf</p>
+                    </div>
+                </div>
+
+                <div class="menu-section" id="wines">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Champagne Dom Pérignon 2012</h3>
+                            <span class="price">$45/glass</span>
+                        </div>
+                        <p>Elegant and refined with notes of citrus and brioche</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Burgundian Pinot Noir</h3>
+                            <span class="price">$18/glass</span>
+                        </div>
+                        <p>Côte de Beaune with earthy undertones and cherry finish</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Barolo Riserva 2015</h3>
+                            <span class="price">$22/glass</span>
+                        </div>
+                        <p>Full-bodied with tannins, leather, and dark fruit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section id="reservations" class="reservations">
+        <div class="container">
+            <h2 class="section-title">Make a Reservation</h2>
+            <form class="reservation-form">
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <select id="guests" name="guests" required>
+                        <option value="">Select guests</option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6 Guests</option>
+                        <option value="7">7+ Guests</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <select id="time" name="time" required>
+                        <option value="">Select time</option>
+                        <option value="17:00">5:00 PM</option>
+                        <option value="17:30">5:30 PM</option>
+                        <option value="18:00">6:00 PM</option>
+                        <option value="18:30">6:30 PM</option>
+                        <option value="19:00">7:00 PM</option>
+                        <option value="19:30">7:30 PM</option>
+                        <option value="20:00">8:00 PM</option>
+                        <option value="20:30">8:30 PM</option>
+                        <option value="21:00">9:00 PM</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="special">Special Requests</label>
+                    <textarea id="special" name="special" rows="3" placeholder="Dietary restrictions, occasion, etc."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Reserve Table</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact & Location</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Address</h3>
+                        <p>123 Culinary Avenue<br>
+                        New York, NY 10013</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Phone</h3>
+                        <p>(212) 555-FOOD<br>
+                        (212) 555-3663</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Hours</h3>
+                        <p><strong>Dinner Service</strong><br>
+                        Tuesday - Saturday: 5:00 PM - 10:00 PM<br>
+                        Sunday: 5:00 PM - 9:00 PM<br>
+                        <em>Closed Mondays</em></p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p>reservations@saveur.com<br>
+                        info@saveur.com</p>
+                    </div>
+                </div>
+                
+                <div class="map-placeholder">
+                    <p>Interactive Map Location</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Saveur</h3>
+                    <p>An extraordinary culinary journey</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#menu">Menu</a>
+                    <a href="#reservations">Reservations</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Saveur Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
